@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: rgb(240, 197, 236);
+}
+.header{
+    font-size: 3em;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 2px 4px rgb(137, 134, 134);
+    width: 100%;
+    margin-top: 27px;
+    padding-left: 7px;
+    margin-left: 2px
+}
+.info{
+    font-size: 1.67em;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    text-shadow: 1px 2px 4px rgb(137, 134, 134);
+}
+.game {
+    display: block;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    box-shadow: 1px 1px 4px rgba(202, 20, 20, 0.501);
+    padding: 15px;
+    background-color: rgb(100, 11, 11);
+    border-radius: 15px;
+    
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 80px 80px 80px 80px;
+    grid-template-rows: 80px 80px 80px 80px;
+    border: 3px solid rgba(0, 0, 0, 0.858);
+}
+
+.grid button {
+    background-color: rgb(138, 221, 75);
+    color: rgb(45, 9, 137);
+    font-size: 2em;
+    /* font-size: 24px; */
+    font-weight: bold;
+    border: 3px solid rgb(71, 151, 10);
+}
+
+.footer {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer button {
+    border: none;
+    font-size: 1.5em;
+    /* font-size: 20px; */
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 5px;
+    width: 80px;
+    background-color: rgb(57, 223, 235);
+    color: rgba(222, 73, 28, 0.981);
+}
+
+.footer button:hover {
+    color: rgb(57, 223, 235);
+    background-color: rgba(222, 73, 28, 0.981);
+}
+
+.footer span {
+    flex: 1;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: rgb(230, 177, 5);
+    margin: auto 2px;
+}
+.contact_info{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 22px;
+    /* z-index: 10; */
+    display: flex;
+    /* -webkit-box-pack: center; */
+    justify-content: center;
+    flex-direction: column;
+    /* margin-bottom: 9px; */
+}
+.creator{
+    color: rgba(21, 7, 78, 0.981);
+    font-family: 'Autour One', cursive;
+    text-align: center;
+    bottom: 0px;
+    /* margin: 5px auto 0px; */  
+}
+.creator span{
+    font-weight: bold;
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.creator a{
+    color: rgb(118, 63, 207);
+    cursor: pointer;
+}
+.creator a:hover{
+    color: rgb(35, 122, 228);
+    text-shadow: 1px 1px 0px rgb(118, 63, 207);
+    font-size: 1.1em;
+}
+
+.logos{
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    /* -webkit-box-align: center; */
+    align-items: center;
+    width: 100%;
+    margin-top: 29px;
+}
+.logos a{
+    font-size: 1.5em;
+}
+.fa-github:hover{
+    text-decoration: underline;
+    font-size: 1.6em;
+}
+.fa-linkedin:hover{
+    text-decoration: underline;
+    font-size: 1.6em;
+}
+.fa-facebook:hover{
+    text-decoration: underline;
+    font-size: 1.6em;
+}
+.fa-instagram:hover{
+    text-decoration: underline;
+    font-size: 1.6em;
+}
+.fa-github, .fa-linkedin, .fa-facebook, .fa-instagram{
+    padding-left: 15px;
+}

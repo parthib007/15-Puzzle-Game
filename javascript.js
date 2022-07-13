@@ -202,5 +202,19 @@ class Box {
       }
     }
   }
-  
+
+
   const GAME = Game.ready();
+
+//function for displaying the rules
+function show(){
+  // document.getElementById('rules').style.display = 'block';
+
+  let div = document.getElementById('rules');
+  if(div.style.display !== 'block'){
+    div.style.display = 'block';
+  }
+  else{
+    div.style.display = 'none';
+  }
+}

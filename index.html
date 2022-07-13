@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,17 +8,21 @@
     <title>15-Puzzle Game</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Autour+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/71f7dcdb77.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Autour+One&display=swap" rel="stylesheet">
-<script src="https://kit.fontawesome.com/71f7dcdb77.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Margarine&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div class="header">
         15-Puzzle Game
@@ -50,22 +55,34 @@
             <span id="move">Move:100</span>
             <span id="time">Time:100</span>
         </div>
+        <div class="rules_heading">
+    
+            <a href="#rules" onclick="show()">Click here for rules</a>
+            <div id="rules">
+                The 15 puzzle is a sliding puzzle having 15 square tiles numbered 1-15 in a frame that is 4 tiles high and 4 tiles wide, leaving one unoccupied tile position. Tiles in the same row or column of the open position can be moved by sliding them horizontally or vertically, respectively. The goal of the puzzle is to place the tiles in numerical order.
+            </div>
+    
+        </div>
     </div>
     <div class="contact_info">
         <div class="creator">
 
             Made by <span>Parthib Das</span>
-            <br>This project is open source. Feel free to visit <a href="" target="_blank">the repo</a>
+            <br>This project is open source. Feel free to visit <a href="https://github.com/parthib007/15-Puzzle-Game" target="_blank">the repo</a>
         </div>
         <div class="logos">
             <a href="https://github.com/parthib007" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/parthib-das-4648ba231/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://www.facebook.com/profile.php?id=100009658311027" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://www.instagram.com/007parthib_das/" target="_blank"><i class="fa-brands fa-instagram"></i></a>           
+            <a href="https://www.linkedin.com/in/parthib-das-4648ba231/" target="_blank"><i
+                    class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100009658311027" target="_blank"><i
+                    class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/007parthib_das/" target="_blank"><i
+                    class="fa-brands fa-instagram"></i></a>
         </div>
     </div>
 
     <h1 class="message">You win!</h1>
     <script src="javascript.js"></script>
 </body>
+
 </html>

@@ -29,11 +29,13 @@ body{
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
     box-shadow: 1px 1px 4px rgba(202, 20, 20, 0.501);
     padding: 15px;
     background-color: rgb(100, 11, 11);
     border-radius: 15px;
-    
+    /* z-index: -3; */
 }
 
 .grid {
@@ -46,26 +48,35 @@ body{
 .grid button {
     background-color: rgb(138, 221, 75);
     color: rgb(45, 9, 137);
-    font-size: 2em;
+    font-size: 2rem;
     /* font-size: 24px; */
     font-weight: bold;
     border: 3px solid rgb(71, 151, 10);
+    cursor: pointer;
+}
+button:hover{
+    filter: brightness(110%);
+}
+button:active{
+    /* transform: translate(0,0.3rem); */
+    box-shadow: 0 0.1rem rgba(255,255,255,0.70);
 }
 
 .footer {
     margin-top: 15px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer button {
     border: none;
-    font-size: 1.5em;
+    font-size: 1.2em;
     /* font-size: 20px; */
     font-weight: bold;
     border-radius: 20px;
     padding: 5px;
-    width: 80px;
+    width: 65px;
     background-color: rgb(57, 223, 235);
     color: rgba(222, 73, 28, 0.981);
 }
@@ -83,6 +94,23 @@ body{
     color: rgb(230, 177, 5);
     margin: auto 2px;
 }
+.rules_heading{
+    text-align: center;
+    word-wrap: break-word;
+    font-size: 1.2em;
+    padding: 10px 2px 5px 2px;
+    margin-top: 5px;
+}
+.rules_heading a{
+    text-decoration: none;
+    color: rgb(188, 219, 9);
+    display: inline;
+}
+#rules{
+    display: none;
+    font-family: 'Margarine', cursive;
+    color: blanchedalmond;
+}
 .contact_info{
     position: absolute;
     bottom: 0;
@@ -93,13 +121,14 @@ body{
     /* -webkit-box-pack: center; */
     justify-content: center;
     flex-direction: column;
-    /* margin-bottom: 9px; */
+    margin-top: 1.25em;
 }
 .creator{
     color: rgba(21, 7, 78, 0.981);
     font-family: 'Autour One', cursive;
     text-align: center;
     bottom: 0px;
+    margin-top: 1.25em;
     /* margin: 5px auto 0px; */  
 }
 .creator span{
@@ -132,18 +161,22 @@ body{
 .fa-github:hover{
     text-decoration: underline;
     font-size: 1.6em;
+    background-color: rgb(249, 186, 243);
 }
 .fa-linkedin:hover{
     text-decoration: underline;
     font-size: 1.6em;
+    background-color: rgb(249, 186, 243)
 }
 .fa-facebook:hover{
     text-decoration: underline;
     font-size: 1.6em;
+    background-color: rgb(249, 186, 243)
 }
 .fa-instagram:hover{
     text-decoration: underline;
     font-size: 1.6em;
+    background-color: rgb(249, 186, 243)
 }
 .fa-github, .fa-linkedin, .fa-facebook, .fa-instagram{
     padding-left: 15px;
